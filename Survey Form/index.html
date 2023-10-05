@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <h1 id="title">This is the title</h1>
+    <p id="description">This is the description</p>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form id="survey-form">
+        <div>
+            <label id="name-label">input name</label>
+            <input id="name" required type="text" placeholder="dito">
+        </div>
+        <div>
+            <label id="email-label">input email</label>
+            <input id="email" required type="email" placeholder="dito">
+        </div>
+        <div>
+            <label id="number-label">input number</label>
+            <input id="number" type="number" min="1" max="80" placeholder="dito">
+        </div>
+        <div>
+            <select id="dropdown">
+                <option name="dropdown" value="">(select one)</option>
+                <option name="dropdown" value="1">Youtube</option>
+                <option name="dropdown" value="2">Twitter</option>
+            </select>
+        </div>
+        <div>
+            <input name="radio" type="radio" value="hotdog">
+            <input name="radio" type="radio" value="embutido">
+        </div>
+        <div>
+            <input name="checkbox" type="checkbox" value="check1">
+            <input name="checkbox" type="checkbox" value="check2">
+        </div>
+        <textarea> </textarea>
+        <div>
+        <input id="submit" type="submit">
+        </div>
+    </form>
+</body>
