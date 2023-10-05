@@ -9,18 +9,23 @@
 
 <body>
     <form id="survey-form">
-        <div>
-            <label id="name-label">input name</label>
-            <input id="name" required type="text" placeholder="dito">
-        </div>
-        <div>
-            <label id="email-label">input email</label>
-            <input id="email" required type="email" placeholder="dito">
-        </div>
-        <div>
-            <label id="number-label">input number</label>
-            <input id="number" type="number" min="1" max="80" placeholder="dito">
-        </div>
+        <fieldset>
+            <div>
+                <label id="name-label">input name</label>
+                <input id="name" required type="text" placeholder="dito">
+            </div>
+
+            <div>
+                <label id="email-label">input email</label>
+                <input id="email" required type="email" placeholder="dito">
+            </div>
+
+            <div>
+                <label id="number-label">input number</label>
+                <input id="number" type="number" min="1" max="80" placeholder="dito">
+            </div>
+        </fieldset>
+
         <div>
             <select id="dropdown">
                 <option name="dropdown" value="">(select one)</option>
@@ -28,17 +33,29 @@
                 <option name="dropdown" value="2">Twitter</option>
             </select>
         </div>
+
         <div>
-            <input name="radio" type="radio" value="hotdog">
-            <input name="radio" type="radio" value="embutido">
+            <fieldset>
+                <label for="hotdog" style="display:block">
+                    <input id="hotdog" name="radio" type="radio" value="hotdog"> Hotdog
+                </label>
+                <label for="embutido" style="display:block">
+                    <input id="embutido" name="radio" type="radio" value="embutido"> Embutido
+                </label>
+            </fieldset>
         </div>
+
         <div>
             <input name="checkbox" type="checkbox" value="check1">
             <input name="checkbox" type="checkbox" value="check2">
         </div>
-        <textarea> </textarea>
+
         <div>
-        <input id="submit" type="submit">
+            <textarea> </textarea>
+        </div>
+
+        <div>
+            <input id="submit" type="submit">
         </div>
     </form>
 </body>
